@@ -4,7 +4,12 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+  
+  # docker-machineのshared_folderにマウントしている場合ファイルが変更されても
+  # 検知されないので、この２つのオプションを設定しておく
+  # ローカルで動かす分にはreload_classes_only_on_changeの設定は不要
   config.cache_classes = false
+  config.reload_classes_only_on_change = false
 
   # Do not eager load code on boot.
   config.eager_load = false

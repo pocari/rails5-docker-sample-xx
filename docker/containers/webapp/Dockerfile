@@ -60,7 +60,7 @@ RUN \cp -fp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 VOLUME /var/data
-EXPOSE 8080
+EXPOSE 8080 3000
 
 CMD ["bash"]
 
