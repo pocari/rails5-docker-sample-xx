@@ -1,7 +1,7 @@
 mysql:
   build: $DB_DOCKERFILE_DIR
   ports:
-    - "3306:3306"
+    - "13306:3306"
   environment:
     MYSQL_DATABASE : myapp_development
     MYSQL_USER : myapp
