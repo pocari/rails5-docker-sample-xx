@@ -14,7 +14,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install \
         libyaml-dev \
         zlib1g-dev \
         libmysqld-dev \
-        vim-tiny
+        vim-tiny \
+        nodejs
 
 ############################################################
 # ruby install
